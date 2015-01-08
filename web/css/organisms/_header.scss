@@ -1,0 +1,6 @@
+.header {
+    @include clearfix;
+    @include padding(20px 5px);
+    font-size: 20px;
+    text-align: center;
+}

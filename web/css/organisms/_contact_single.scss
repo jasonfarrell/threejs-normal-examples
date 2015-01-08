@@ -1,0 +1,7 @@
+.contact-single {
+    @include padding(5px);
+
+    input {
+        text-transform: capitalize;
+    }
+}

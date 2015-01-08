@@ -1,0 +1,7 @@
+.badge {
+    @include padding(13px null);
+    @include size(50px);
+    background-color: $black;
+    border-radius: 50%;
+    color: $white;
+}

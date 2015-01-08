@@ -1,0 +1,11 @@
+form {
+
+    input {
+        @include margin(5px null);
+
+        &.ng-dirty.ng-invalid {
+            border-color: $red;
+            color: $red;
+        }
+    }
+}

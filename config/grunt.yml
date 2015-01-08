@@ -1,0 +1,53 @@
+config:
+    liveReloadPort: 35740
+    files:
+        img:
+            src: web/img/**/*.{png,jpg,gif}
+        js:
+            vendor:
+                src:
+                    - web/vendor/modernizr/modernizr.js
+                    - web/vendor/twitter/index.js
+                    - web/vendor/facebook/index.js
+                dest: web/build/vendor.js
+                destMin: web/build/vendor.min.js
+            app:
+                src:
+                    - web/js/apps/*/app/app.js
+                    - web/js/apps/*/app/**/*.js
+                    - '!web/js/apps/*/app/**/*.test.js'
+                dest: web/build/app.js
+                destMin: web/build/app.min.js
+            tests:
+                unit:
+                    src:
+                        - web/vendor/angular/angular.js
+                        - web/vendor/angular-mocks/angular-mocks.js
+                        - web/vendor/angular-route/angular-route.js
+                        - web/vendor/angular-touch/angular-touch.js
+                        - web/vendor/angular-animate/angular-animate.js
+                        - web/js/apps/*/app/**/*.test.js
+                e2e:
+                    baseUrl: http://base-angular.local,
+                    specs:
+                        - web/js/apps/contacts_app/test/*.js
+
+            livereload: web/js/livereload.js
+        scss:
+            loadPaths:
+                - web/css
+                - web/vendor
+                - web/vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap
+                - web/vendor/bourbon/dist
+            app:
+                src:
+                    - web/css/application.scss
+                dest: web/css/main.css
+        scssImport:
+            watch:
+                - web/css/**/*.scss
+                - '!web/css/*.css'
+                - '!web/css/application.scss'
+        templates:
+            watch:
+                - web/js/apps/*/app/**/*.html

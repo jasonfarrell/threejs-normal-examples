@@ -1,0 +1,21 @@
+<div class="contacts-list">
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contact in ctrl.contacts | orderBy:'first_name'" class="contacts-list__item">
+                <td>{{ contact.first_name }}</td>
+                <td>{{ contact.last_name }}</td>
+                <td>
+                    <a ng-href="/contacts/{{ contact.id }}">Edit</a> |
+                    <a ng-click="ctrl.delete(contact)" class="contacts-list__item__delete">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

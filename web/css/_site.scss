@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+html,
+body {
+    @include prefixer(font-smoothing, antialiased, webkit moz spec);
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+[ng-cloak] {
+    display: none !important;
+}

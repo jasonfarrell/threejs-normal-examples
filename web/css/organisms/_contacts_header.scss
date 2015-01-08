@@ -1,0 +1,13 @@
+.contacts-header {
+    $padding: 10px;
+    @include padding(20px $padding);
+    background-color: $gray;
+    border-bottom: 2px solid $black;
+    position: relative;
+    text-align: center;
+
+    .badge {
+        @extend %align-vertically;
+        right: $padding;
+    }
+}

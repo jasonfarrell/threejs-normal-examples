@@ -1,0 +1,14 @@
+<div class="contact-single">
+    <img ng-src="{{ ctrl.contact.avatar }}">
+    <form novalidate ng-submit="ctrl.updateContact(ctrl.contact)" name="contactForm">
+        <div>
+            <input type="text" ng-model="ctrl.contact.first_name" required ng-minlength="2">
+        </div>
+        <div>
+            <input type="text" ng-model="ctrl.contact.last_name" required>
+        </div>
+        <div>
+            <input type="submit" value="Save" ng-disabled="contactForm.$invalid">
+        </div>
+    </form>
+</div>

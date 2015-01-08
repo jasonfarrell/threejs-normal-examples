@@ -1,0 +1,7 @@
+.contacts-list__item {
+    text-transform: capitalize;
+
+    .contacts-list__item__delete {
+        color: $red;
+    }
+}

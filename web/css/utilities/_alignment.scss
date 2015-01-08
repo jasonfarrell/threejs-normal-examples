@@ -1,0 +1,14 @@
+%align-vertically {
+    @include position(absolute, 50% null null null);
+    @include transform(translateY(-50%));
+}
+
+%align-horizontally {
+    @include position(absolute, null null null 50%);
+    @include transform(translateX(-50%));
+}
+
+%align-all {
+    @include position(absolute, 50% null null 50%);
+    @include transform(translate(-50%, -50%));
+}

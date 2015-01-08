@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+
+    thead {
+
+        tr {
+            background: $black;
+            color: $white;
+        }
+
+        th {
+            text-align: left;
+        }
+    }
+
+    tbody {
+
+        tr:nth-child(odd) {
+            background: #f1f1f1;
+        }
+    }
+
+    th,
+    td {
+        @include padding(5px);
+    }
+}
