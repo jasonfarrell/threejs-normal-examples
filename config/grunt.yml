@@ -7,8 +7,7 @@ config:
             vendor:
                 src:
                     - web/vendor/modernizr/modernizr.js
-                    - web/vendor/twitter/index.js
-                    - web/vendor/facebook/index.js
+                    - web/vendor/threejs/build/three.js
                 dest: web/build/vendor.js
                 destMin: web/build/vendor.min.js
             app:
@@ -21,11 +20,6 @@ config:
             tests:
                 unit:
                     src:
-                        - web/vendor/angular/angular.js
-                        - web/vendor/angular-mocks/angular-mocks.js
-                        - web/vendor/angular-route/angular-route.js
-                        - web/vendor/angular-touch/angular-touch.js
-                        - web/vendor/angular-animate/angular-animate.js
                         - web/js/apps/*/app/**/*.test.js
                 e2e:
                     baseUrl: http://base-angular.local,
