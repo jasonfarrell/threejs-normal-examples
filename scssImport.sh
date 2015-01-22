@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Import vendor requirements
-VENDOR_FILES=$'@import \'_normalize\';\n@import \'_bourbon\';'
+VENDOR_FILES=$'@import \'_normalize\';\n@import \'_bourbon\';\n@import \'_neat\';'
 
 # Import utility files before others
 #   First find only files under utilities

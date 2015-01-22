@@ -12,9 +12,9 @@ config:
                 destMin: web/build/vendor.min.js
             app:
                 src:
-                    - web/js/apps/*/app/app.js
-                    - web/js/apps/*/app/**/*.js
-                    - '!web/js/apps/*/app/**/*.test.js'
+                    - web/js/apps/app.js
+                    - web/js/apps/**/*.js
+                    - '!web/js/apps/**/*.test.js'
                 dest: web/build/app.js
                 destMin: web/build/app.min.js
             tests:
@@ -24,7 +24,7 @@ config:
                 e2e:
                     baseUrl: http://base-angular.local,
                     specs:
-                        - web/js/apps/contacts_app/test/*.js
+                        - web//jsapps/contacts_app/test/*.js
 
             livereload: web/js/livereload.js
         scss:
@@ -33,6 +33,7 @@ config:
                 - web/vendor
                 - web/vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap
                 - web/vendor/bourbon/dist
+                - web/vendor/neat/app/assets/stylesheets
             app:
                 src:
                     - web/css/application.scss

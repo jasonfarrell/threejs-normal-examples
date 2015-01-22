@@ -156,10 +156,6 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            karma: {
-                files: [config.files.js.app.src, config.files.js.tests.unit.src],
-                tasks: ['karma:unit:run']
-            },
             concat: {
                 files: config.files.js.app.src,
                 tasks: 'concat:js-app'
@@ -217,7 +213,6 @@ module.exports = function(grunt) {
     // vendor requirements are installed locally.
     // see: https://github.com/GoogleCloudPlatform/appengine-python-flask-skeleton/issues/1
     tasks = [
-        'karma:unit',
         'symlink:pre-commit-hook',
         'exec:write-scss-import-file',
         'sass',
