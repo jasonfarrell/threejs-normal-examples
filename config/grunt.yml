@@ -12,9 +12,10 @@ config:
                 destMin: web/build/vendor.min.js
             app:
                 src:
+                    - web/js/apps/background/background.js
+                    - web/js/apps/cta/cta.js
+                    - web/js/apps/title/title.js
                     - web/js/apps/app.js
-                    - web/js/apps/**/*.js
-                    - '!web/js/apps/**/*.test.js'
                 dest: web/build/app.js
                 destMin: web/build/app.min.js
             tests:

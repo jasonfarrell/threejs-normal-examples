@@ -7,12 +7,73 @@
 html,
 body {
     @include prefixer(font-smoothing, antialiased, webkit moz spec);
+    background-color: #000;
     color: $base-font-color;
     font-family: $base-font-family;
     font-size: $base-font-size;
+    height: 100%;
     line-height: $base-line-height;
+    width: 100%;
 }
 
 [ng-cloak] {
     display: none !important;
 }
+
+#background {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+p {
+    padding: 25px 45px;
+}
+
+h1 {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+h3 {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.page {
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+.title,
+.cta-button {
+    @include user-select(none);
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    width: 70%;
+}
+
