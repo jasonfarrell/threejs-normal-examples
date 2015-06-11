@@ -10,6 +10,7 @@
     "jquery": "~2.1.3",
     "threejs": "*",
     "neat": "~1.7.1",
-    "threex.domevents": "git://github.com/dezmaeth/threex.domevents#b8ab069706f56679b127e2722f81052dff68a25c"
+    "threex.domevents": "git://github.com/dezmaeth/threex.domevents#b8ab069706f56679b127e2722f81052dff68a25c",
+    "greensock": "~1.17.0"
   }
 }
